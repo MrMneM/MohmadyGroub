@@ -10,7 +10,9 @@
 
 .ul-m:last-child {}
 
-.list {}
+.list {
+    background-color: black;
+}
 
 .tt {
     margin-left: auto;
@@ -22,14 +24,16 @@
     padding: 7px 15px;
 }
 
-.lists:hover a {
+.lists:hover {
     color: lightgreen;
-    /* cursor: pointer; */
+    cursor: pointer;
+    /* background-color: aliceblue; */
 }
 
-.lists:hover {
+
+/* .lists:hover {
     cursor: pointer;
-}
+} */
 
 .text-serching:not(:focus) {
     display: none;
@@ -111,7 +115,7 @@
 }
 
 
-/* mediaclass */
+/* media  class */
 
 @media (max-width:750px) {
     .div-li-list {
