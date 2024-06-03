@@ -27,7 +27,7 @@
 .lists:hover {
     color: lightgreen;
     cursor: pointer;
-    background-color: red;
+    /* background-color: red; */
     /* background-color: aliceblue; */
 }
 
