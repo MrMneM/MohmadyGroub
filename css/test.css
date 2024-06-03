@@ -1,0 +1,91 @@
+.form-load {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.loader-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.6);
+    z-index: 1000;
+}
+
+.loader {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    animation: rotate 1.2s linear infinite;
+}
+
+.loader div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #1e90ff;
+    border-radius: 50%;
+    transform-origin: 40px 40px;
+    animation: loader-animation 1.2s linear infinite;
+}
+
+.loader div:nth-child(1) {
+    transform: rotate(0deg) translate(40px);
+}
+
+.loader div:nth-child(2) {
+    transform: rotate(60deg) translate(40px);
+}
+
+.loader div:nth-child(3) {
+    transform: rotate(120deg) translate(40px);
+}
+
+.loader div:nth-child(4) {
+    transform: rotate(180deg) translate(40px);
+}
+
+.loader div:nth-child(5) {
+    transform: rotate(240deg) translate(40px);
+}
+
+.loader div:nth-child(6) {
+    transform: rotate(300deg) translate(40px);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-animation {
+    0%,
+    20%,
+    80%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.content {
+    display: none;
+}

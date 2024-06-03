@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo {
+    direction: rtl;
+}
+
+.ul-m:last-child {}
+
+.list {}
+
+.tt {
+    margin-left: auto;
+}
+
+.logo-0 {}
+
+.login {
+    padding: 7px 15px;
+}
+
+.lists:hover a {
+    color: lightgreen;
+    /* cursor: pointer; */
+}
+
+.lists:hover {
+    cursor: pointer;
+}
+
+.text-serching:not(:focus) {
+    display: none;
+}
+
+.div-body {}
+
+.login:hover {}
+
+.ul-for-help {
+    list-style-type: decimal;
+}
+
+.ul-list-dropdown {
+    width: fit-content;
+    position: absolute;
+    /* display: block; */
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* left: -1500px; */
+    /* left: -50px; */
+}
+
+.div-close {
+    box-sizing: border-box;
+}
+
+.div-close:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.d-v {
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+}
+
+.div-drop {
+    position: absolute;
+    top: 1035px;
+    left: 15px;
+}
+
+.li-list-drop {}
+
+@keyframes anim-list-dropdown-left {
+    0%,
+    10% {
+        left: -250px;
+    }
+    25%,
+    50% {
+        left: -400px;
+    }
+    75%,
+    100% {
+        left: 1250px;
+    }
+}
+
+@keyframes anim-list-dropdown-right {
+    0%,
+    10% {
+        left: 1250px;
+    }
+    25%,
+    50% {
+        left: -300px;
+    }
+    75%,
+    100% {
+        left: 0px;
+    }
+}
+
+
+/* mediaclass */
+
+@media (max-width:750px) {
+    .div-li-list {
+        display: none;
+    }
+    .li-list-icon {
+        display: block;
+    }
+    .li-serch {
+        display: block;
+        color: #d0c277;
+        /* margin-top: 0px; */
+    }
+    .div-drop {
+        /* width: 100%; */
+    }
+}
+
+
+/* animation.logo */
