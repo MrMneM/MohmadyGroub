@@ -117,6 +117,23 @@
     }
 }
 
+
+/* .lists:hover a {
+    color: lightgreen;
+    cursor: pointer;
+} */
+
+.tr {
+    /* background-color: #fff; */
+    /* cursor: pointer; */
+    /* padding: 50px; */
+}
+
+.tr:hover {
+    cursor: pointer !important;
+    color: red !important;
+}
+
 .page {}
 
 .nav {
